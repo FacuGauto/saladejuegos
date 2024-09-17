@@ -2,20 +2,26 @@
     <h2>Inicio de sesion</h2>
     <form>
         <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Nombre</label>
+            <input type="text" [(ngModel)]="persona.email" name="persona.email">
+            <label>Correo electronico</label>
         </div>
         <div class="user-box">
-            <input type="password" name="" required="">
+            <input type="password" [(ngModel)]="persona.password" name="persona.password">
             <label>Contraseña</label>
         </div>
-        <a routerLink="./../home">
+        <a (click)="login()" routerLink="./../home">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Iniciar Sesion
         </a>
-        <a routerLink="./../home">Autocompletar</a>
+        <a (click)="autocompletar()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Autocompletar
+        </a>
     </form>
 </div>

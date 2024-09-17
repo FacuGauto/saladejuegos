@@ -3,6 +3,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "FM Launcher",
+      "type": "Ruby",
+      "request": "launch",
+      "program": "${workspaceRoot}/Illuminati/crawlers/launcher.rb",
+      "args": [
+          "-v",
+          "-d",
+          "-s 3",
+          "-n"
+       ]
+  },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",
@@ -15,6 +27,15 @@
       "request": "launch",
       "preLaunchTask": "npm: test",
       "url": "http://localhost:9876/debug.html"
+    },
+    {
+      "name": "Launcher",
+      "type": "ruby",
+      "request": "launch",
+      "program": "${workspaceRoot}/Batua-Scrapers/crawlers/launcher.rb",
+      "args": [
+        "s 21"
+      ]
     }
   ]
 }
